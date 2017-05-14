@@ -34,6 +34,7 @@ proc print data=crimelow_population_2014(obs=3) label style(header)={just=c fore
 	var	new_population	/	style(data)={just=c};
 	var	total_crimes	/	style(data)={just=c};
 	var	crime_rate		/	style(data)={just=c};
+	footnote "These numbers are based on the data from FBI UCR" ;
 run;
 
 /** To select only the top 3 2014 in the 2015 data **/
@@ -69,5 +70,6 @@ proc print data=crimelow_population_2015(obs=3) label style(header)={just=c fore
 	var	new_population	/	style(data)={just=c};
 	var	total_crimes	/	style(data)={just=c};
 	var	crime_rate		/	style(data)={just=c};
+	footnote "These numbers are based on the data from FBI UCR" ;
 run;
 ods html close;

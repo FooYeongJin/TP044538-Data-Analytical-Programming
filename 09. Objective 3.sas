@@ -44,7 +44,7 @@ run;
 /** To summarize the population and total crimes by year and states**/
 data crimehigh_population_2015;
   set summary_crime_population;
-  where year=2015 and state in ('UTAH','MISSISSIPPI','MISSOURI');
+  where year=2015 and state in ('UTAH','MISSISSIPPI','WASHINGTON');
 
   if 		state='UTAH' 		then rank=1;
   else if 	state='MISSISSIPPI' then rank=2;

@@ -15,8 +15,7 @@ data work.table4_tmp_v1;
 	property_crime=sum(burglary,larceny_theft,motor_vehicle_theft);
 
 	/* To calculate the total crimes **/
-	total_crimes=sum(violent_crime,murder,robbery,aggravated_assault,
-                     burglary,larceny_theft,motor_vehicle_theft,sexual_assault);
+	total_crimes=sum(violent_crime,property_crime);
 
 	drop rape_revised rape_legacy arson;  
 run;

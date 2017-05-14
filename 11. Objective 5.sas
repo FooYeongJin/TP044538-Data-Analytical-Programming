@@ -85,10 +85,10 @@ run;
 /** Select the highest top 3 and lowest top 3 states**/
 data police_population;
   set summary_police_population;
-  if state in ('UTAH','MISSISSIPPI','MISSOURI','IDAHO','NEW YORK','NORTH DAKOTA');
+  if state in ('UTAH','MISSISSIPPI','WASHINGTON','IDAHO','NEW YORK','NORTH DAKOTA');
   if      state='UTAH'         then rank=1;
   else if state='MISSISSIPPI'  then rank=2;
-  else if state='MISSOURI'     then rank=3;
+  else if state='WASHINGTON'   then rank=3;
   else if state='NORTH DAKOTA' then rank=4;
   else if state='NEW YORK'     then rank=5;
   else                              rank=6;
